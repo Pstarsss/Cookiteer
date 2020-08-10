@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Marte (iqianduan@126.com)
+ * @date    2020-08-10 09:47:45
+ * @version $Id$
+ */
+
+.opening_animation{
+   background-color: #85B72C;
+   position: fixed;
+   height: 100%;
+   width:100%;
+   opacity: 1;
+   visibility: hidden;
+   transition: all 0.3s;
+}
+.autos{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left:-165px;
+    margin-top:-165px;
+    width: 330px;
+    height:330px;
+}
+.pancake{
+    width: 100%;
+    height:100%;
+    border:1px solid black;
+}
+.Pan{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:100%;
+    border:1px solid orange;
+}
+.ball{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:30%;
+    height:30%;
+    border-radius: 100%;
+    background-color:#ffffff;
+    border:1px solid #ffffff;
+    animation-name: flyfly;
+    animation-duration:2.1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes flyfly {
+    0%{
+        height:0;
+        bottom: 0%;
+        left:0%;
+    }
+    1%{
+        height:30%;
+    }
+    20%{
+        bottom:24%;
+        left:15%;
+    }
+    50%{
+        height:0;
+        bottom:0%;
+        left:40%
+    }
+    51%{
+        height:30%
+    }
+    70%{
+        bottom:24%;
+        left:25%;
+    }
+    100%{
+        height:0;
+        bottom:0;
+        left:0%;
+    }
+}
